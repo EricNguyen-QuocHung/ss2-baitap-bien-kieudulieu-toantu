@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        const Pi = 3.1416;
+        function tinhDiemTrungBinh() {
+            let diemLiIn = prompt("diem Li la: ");
+            let diemHoaIn = prompt("diem Hoa la: ");
+            let diemSinhIn = prompt("diem Sinh la: ");
+            let diemLi = parseInt(diemLiIn);
+            let diemHoa = parseInt(diemHoaIn);
+            let diemSinh = parseInt(diemSinhIn);
+            let tongDiem = diemLi + diemHoa + diemSinh;
+            let diemTrungBinh = (tongDiem)/3;
+            console.log("Tong diem cua ban la " + tongDiem);
+            console.log("Diem trung binh la " + diemTrungBinh);
+        }
+        function chuyenDoiNhietDo() {
+            let nhietDoIn = prompt("nhiet do theo Celcius: ");
+            let celciusDegree = parseInt(nhietDoIn);
+            let fahrenheitDegree = celciusDegree*9/5 + 32;
+            console.log("Fahrenheit degree is: " + fahrenheitDegree);
+        }
+        function chuViHinhTron() {
+            let banKinhIn = prompt("Tinh chu vi: ban kinh hinh tron la: ");
+            let banKinh = parseInt(banKinhIn);
+            let chuVi = 2*Pi*banKinh;
+            console.log("chu vi hinh tron la " + chuVi);
+        }
+        function dienTichHinhTron() {
+            let banKinhIn = prompt("Tinh dien tich: ban kinh hinh tron la: ");
+            let banKinh = parseInt(banKinhIn);
+            let dienTich = Pi*banKinh*banKinh;
+            console.log("dien tich hinh tron la " + dienTich);
+        }
+    </script>
+</head>
+<body>
+    <button id="tinhDiemTrungBinh" type="button" onclick = "tinhDiemTrungBinh()">tinh diem trung binh</button>
+    <button id="chuyenDoiNhietDo" type="button" onclick="chuyenDoiNhietDo()">chuyen doi nhiet do</button>
+    <button id="chuViHinhTron" type="button" onclick="chuViHinhTron()">tinh chu vi hinh tron</button>
+    <button id="dienTichHinhTron" type="button" onclick="dienTichHinhTron()">tinh dien tich hinh tron</button>
+</body>
+</html>
